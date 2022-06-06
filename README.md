@@ -1,9 +1,9 @@
-# health_ai_end_to_end
-End to end pipeline that can be run offline that scrapes, classifies, and characterises all AI publication abstracts on MEDLINE.
+# health_ai_pdf_retrieval
+Multiple methods for retrieving fulltxt of health AI publications.
+Full text can be parsed and sections passed to NLP pipeline.
 
-This is the offline version of the NLP backend to aiforhealth.app.
-Read more at https://www.thelancet.com/journals/landig/article/PIIS2589-7500(22)00032-2/fulltext
-
-Models used in pipeline can be found here: https://drive.google.com/drive/folders/1GEuTa4nEX6Hqr_DVjrzDkVsx5MZEoOnH?usp=sharing.
-
-4b_text_dict_recognition is an alternative to the NLP classifier that uses text recognition/dictionary scripts to characterise abstracts.
+Includes:
+000_doi_html_retrieval -> given doi and institutional access, parse html full text
+001_elsevier_xml_retrieval -> uses science direct api to access xml full text
+002_open_access_link_retrieval -> uses open access api to access links for pdfs
+002b_open_access_pdf_scraper -> downloads pdfs using links
