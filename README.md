@@ -8,7 +8,7 @@ Includes:
 
 Inputs = list of PMIDs/DOIs
 
-01_elsevier_xml_retrieval -> uses science direct api to access xml full text
+01_elsevier_xml_retrieval -> uses science direct api to access xml full text (best quality - methods are properly structured) 
 
 ==============
 
