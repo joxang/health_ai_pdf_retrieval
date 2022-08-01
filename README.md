@@ -12,11 +12,11 @@ Inputs = list of PMIDs/DOIs
 
 ==============
 
-02_open_access_url_retrieval -> from remaining files, use open access api to access direct links for pdfs
+02_open_access_url_retrieval -> for remaining papers, use open access api to access direct links for pdfs
 
-02b_open_access_url_pdf_scraper -> direct pdf download using links
+02b_open_access_url_pdf_scraper -> for successfully obtained open access links, perform direct pdf download using links
 
-02c_remaining_url_retrieval_pdf_scraper -> for remaining files, try to generate pdf links and download using chrome engine
+02c_remaining_url_retrieval_pdf_scraper -> for remaining papers (no open access links), try to generate pdf links using host, and download using chrome engine
 
 ==============
 
@@ -26,7 +26,7 @@ Inputs = list of PMIDs/DOIs
 
 ==============
 
-04_remaining_html_scrape_to_methods -> for remaining links with no pdfs, create online full text access links, scrape and parse html for methods section
+04_remaining_html_scrape_to_methods -> for remaining papers with no pdfs, create online full text access links, scrape and parse html for methods section
 
 ==============
 
