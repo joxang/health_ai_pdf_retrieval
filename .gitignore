@@ -1,6 +1,5 @@
 /data
 /pdf
+/xml
 /deprecated
-/output/science_direct_methods.csv
-/output/science_direct_methods_backup.csv
-/output/science_direct_xmls.csv
+/output
